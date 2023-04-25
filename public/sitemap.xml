@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://mohitkr05.github.io/</loc>
+    <lastmod>2023-04-17T21:20:41+00:00</lastmod>
+  </url><url>
+    <loc>http://mohitkr05.github.io/posts/</loc>
+    <lastmod>2023-04-17T21:20:41+00:00</lastmod>
+  </url><url>
+    <loc>http://mohitkr05.github.io/ai-ml/using-chatgpt-as-a-personal-assistant/</loc>
+    <lastmod>2023-04-17T21:20:41+00:00</lastmod>
+  </url><url>
+    <loc>http://mohitkr05.github.io/ai-ml/using-chatgpt-as-a-personal-assistant/</loc>
+    <lastmod>2023-04-17T21:20:41+00:00</lastmod>
+  </url><url>
+    <loc>http://mohitkr05.github.io/general/set-up-your-system-for-devops-with-ubuntu-linux/</loc>
+    <lastmod>2023-04-16T10:29:46+00:00</lastmod>
+  </url><url>
+    <loc>http://mohitkr05.github.io/development/setting-up-my-new-pc-with-ubuntu-as-my-primary-development-workstation/</loc>
+    <lastmod>2023-04-15T20:30:14+00:00</lastmod>
+  </url><url>
+    <loc>http://mohitkr05.github.io/wordpress/the-complete-guide-to-setup-wordpress-using-aws-lightsail/</loc>
+    <lastmod>2023-04-02T00:17:07+00:00</lastmod>
+  </url><url>
+    <loc>http://mohitkr05.github.io/cloud-computing/virtualization/vagrant-the-complete-tutorial/</loc>
+    <lastmod>2023-03-28T20:37:47+00:00</lastmod>
+  </url>
+</urlset>

@@ -1,0 +1,167 @@
+baseURL: 'http://mohitkr05.github.io/'
+languageCode: 'en-us'
+title: 'Mohit Kumar'
+theme: 'hugo-theme-stack'
+description: 'My life, views and Technology'
+copyright: "Mohit Kumar"
+enableEmoji: True
+enableInlineShortcodes: True
+enableRobotsTXT: True
+googleAnalytics: ""
+paginate: 10
+removePathAccents: True
+security: ""
+sitemap: ""
+taxonomies: ""
+timeZone: "Australia/Melbourne"
+disqusShortname: mohitkr
+imaging:
+  anchor: Smart
+  bgColor: '#ffffff'
+  hint: photo
+  quality: 75
+  resampleFilter: Box
+
+params:
+    mainSections:
+        - post
+    featuredImageField: image
+    rssFullContent: true
+    favicon:  # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+
+    footer:
+        since: 2023
+        customText: All content is Copyrighted - Ask before use 
+
+    dateFormat:
+        published: Jan 02, 2023
+        lastUpdated: Jan 02, 2023 15:04 MST
+
+    sidebar:
+        emoji: 🍥        
+        subtitle: "My life, views and Technology"
+        avatar:
+            enabled: true
+            local: true
+            src: img/avatar.png
+
+    article:
+        math: true
+        toc: true
+        readingTime: true
+        license:
+            enabled: true
+            default: Licensed under CC BY-NC-SA 4.0
+
+    comments:
+        enabled: true
+        provider: disqus
+
+        disqusjs:
+            shortname: mohitkr
+            apiUrl:
+            apiKey:
+            admin:
+            adminLabel:
+
+        utterances:
+            repo:
+            issueTerm: pathname
+            label:
+
+        remark42:
+            host:
+            site:
+            locale:
+
+        vssue:
+            platform:
+            owner:
+            repo:
+            clientId:
+            clientSecret:
+            autoCreateIssue: false
+
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
+
+
+
+menu:
+  main:
+  - name: Home
+    pageRef: /
+    weight: 10
+  - name: Blog
+    pageRef: /posts
+    weight: 20
+  - name: Services
+    pageRef: /services
+    weight: 30
+  footer:
+  - name: Terms
+    pageRef: /terms
+    weight: 10
+  - name: Privacy
+    pageRef: /privacy
+    weight: 20
+    
+minify:
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: false
+  tdewolff:
+    css:
+      keepCSS2: true
+      precision: 0
+    html:
+      keepComments: false
+      keepConditionalComments: true
+      keepDefaultAttrVals: true
+      keepDocumentTags: true
+      keepEndTags: true
+      keepQuotes: false
+      keepWhitespace: false
+    js:
+      keepVarNames: false
+      noNullishOperator: false
+      precision: 0
+    json:
+      keepNumbers: false
+      precision: 0
+    svg:
+      keepComments: false
+      precision: 0
+    xml:
+      keepWhitespace: false
+caches:
+  assets:
+    dir: :resourceDir/_gen
+    maxAge: -1
+  getcsv:
+    dir: :cacheDir/:project
+    maxAge: -1
+  getjson:
+    dir: :cacheDir/:project
+    maxAge: -1
+  getresource:
+    dir: :cacheDir/:project
+    maxAge: -1
+  images:
+    dir: :resourceDir/_gen
+    maxAge: -1
+  modules:
+    dir: :cacheDir/modules
+    maxAge: -1

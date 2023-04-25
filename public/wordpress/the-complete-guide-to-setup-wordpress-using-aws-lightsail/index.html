@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Amazon Lightsail is a user-friendly cloud computing platform that allows you to easily manage your web applications, websites, and other services. If you are looking to set up a new WordPress blog or website using AWS Lightsail you can follow the below-mentioned steps.
+Setting up your VPS If you are looking to set up a new WordPress blog or website using AWS Lightsail you can follow the below-mentioned steps.
+When you log in to your AWS account, you can search for Lightsail'>
+<title>Setup WordPress using AWS Lightsail</title>
+
+<link rel='canonical' href='http://mohitkr05.github.io/wordpress/the-complete-guide-to-setup-wordpress-using-aws-lightsail/'>
+
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='Setup WordPress using AWS Lightsail'>
+<meta property='og:description' content='Amazon Lightsail is a user-friendly cloud computing platform that allows you to easily manage your web applications, websites, and other services. If you are looking to set up a new WordPress blog or website using AWS Lightsail you can follow the below-mentioned steps.
+Setting up your VPS If you are looking to set up a new WordPress blog or website using AWS Lightsail you can follow the below-mentioned steps.
+When you log in to your AWS account, you can search for Lightsail'>
+<meta property='og:url' content='http://mohitkr05.github.io/wordpress/the-complete-guide-to-setup-wordpress-using-aws-lightsail/'>
+<meta property='og:site_name' content='Mohit Kumar'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='AWS' /><meta property='article:tag' content='LIGHTSAIL' /><meta property='article:tag' content='WORDPRESS' /><meta property='article:published_time' content='2023-04-02T00:17:07&#43;00:00'/><meta property='article:modified_time' content='2023-04-02T00:17:07&#43;00:00'/>
+<meta name="twitter:title" content="Setup WordPress using AWS Lightsail">
+<meta name="twitter:description" content="Amazon Lightsail is a user-friendly cloud computing platform that allows you to easily manage your web applications, websites, and other services. If you are looking to set up a new WordPress blog or website using AWS Lightsail you can follow the below-mentioned steps.
+Setting up your VPS If you are looking to set up a new WordPress blog or website using AWS Lightsail you can follow the below-mentioned steps.
+When you log in to your AWS account, you can search for Lightsail">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Mohit Kumar</a></h1>
+            <h2 class="site-description">My life, views and Technology</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li  class='current' >
+            <a href='/posts/' >
+                
+                
+                
+                <span>Blog</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='' >
+                
+                
+                
+                <span>Services</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/wordpress/the-complete-guide-to-setup-wordpress-using-aws-lightsail/">Setup WordPress using AWS Lightsail</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 02, 20212</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>Amazon Lightsail is a user-friendly cloud computing platform that allows you to easily manage your web applications, websites, and other services. If you are looking to set up a new WordPress blog or website using AWS Lightsail you can follow the below-mentioned steps.</p>
+<h2 class="wp-block-heading" id="setting-up-your-vps">Setting up your VPS</h2>
+<p>If you are looking to set up a new WordPress blog or website using AWS Lightsail you can follow the below-mentioned steps.<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<p>When you log in to your AWS account, you can search for Lightsail<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted -->Lightsail in the AWS console<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<ol>
+<li>Log in to your AWS Lightsail account and click on the “Create instance” button.</li>
+<li>Select the “WordPress” blueprint from the list of options.<!-- raw HTML omitted --></li>
+</ol>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<ol>
+<li>Choose the instance location, instance plan, and instance name. You can also choose to add a launch script if you have one.</li>
+<li>Click on the “Create instance” button to start the instance.</li>
+<li>Once the instance is running, click on the “Connect using SSH” button to connect to the instance.</li>
+<li>Once you’re connected to the instance, run the following command to configure WordPress
+<ul>
+<li><code>cat bitnami_credentials</code></li>
+</ul>
+</li>
+<li>This will provide you the credentials.<!-- raw HTML omitted --></li>
+</ol>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h2 class="wp-block-heading" id="dns">DNS </h2>
+<p>One of the key features of Lightsail is the ability to manage your own domain name system (DNS) settings. DNS is responsible for translating human-readable domain names (such as example.com) into IP addresses, allowing users to access websites and services using easy-to-remember domain names instead of complex numerical IP addresses. In this guide, we’ll explore how to manage your DNS settings in Amazon Lightsail, including how to create and edit DNS records, and how to configure your domain to work with your Lightsail resources.</p>
+<!-- raw HTML omitted -->
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<p>To configure DNS, follow the following steps</p>
+<ul>
+<li>Select Create a DNS Zone<!-- raw HTML omitted --></li>
+</ul>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<ul>
+<li>Put your Domain name</li>
+<li>Configure the name servers in the DNS</li>
+<li>Configure the IP assignment (Note you would need either IPv4 or IPv6 for this)</li>
+<li>Make sure you add both entries for www as well.<!-- raw HTML omitted --></li>
+</ul>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h2 id="setting-up-a-certificate-for-https--wp-block-headingfigure-classwp-block-embed-is-type-video-is-provider-youtube-wp-block-embed-youtube-wp-embed-aspect-16-9-wp-has-aspect-ratio">Setting up a certificate for HTTPS  {.wp-block-heading}<!-- raw HTML omitted --></h2>
+<!-- raw HTML omitted -->
+<p>In this guide, we’ll explore the process of securing traffic to and from your Bitnami application host using SSL certificates from Let’s Encrypt.</p>
+<p><!-- raw HTML omitted -->Let’s Encrypt<!-- raw HTML omitted --> is a Certificate Authority (CA) that provides free SSL certificates and I will provide a step-by-step tutorial on how to generate a Let’s Encrypt SSL certificate for your domain.</p>
+<p><code>Run the following command</code></p>
+<p><code>sudo /opt/bitnami/bncert-tool</code></p>
+<p>It will ask you the domain name</p>
+<!-- raw HTML omitted -->
+<p>Follow the steps as shown in this video and you should be able to set up your HTTPS certificate.</p>
+<h2 class="wp-block-heading" id="set-up-email-with-lightsail">Set up email with Lightsail</h2>
+<p>This is the most complex part of the setup.</p>
+<ul>
+<li>Click on the “SMTP Settings” tab in the left-hand menu.</li>
+<li>Click on the “Create My SMTP Credentials” button.<!-- raw HTML omitted --></li>
+</ul>
+<!-- raw HTML omitted -->
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<ul>
+<li>Enter a name for your SMTP credentials in the “Create a new IAM user” field.</li>
+<li>Click on the “Create” button.<!-- raw HTML omitted --></li>
+</ul>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<ul>
+<li>Your SMTP credentials will be displayed on the screen. Make note of the SMTP username and password as you will need them to configure your email client.</li>
+<li>Click on the “Download Credentials” button to save the SMTP credentials in a secure location.<!-- raw HTML omitted --></li>
+</ul>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<ul>
+<li>Click on the “Close” button to exit the SMTP Settings page.</li>
+</ul>
+<p>For this firstly you need to configure the identities in the <!-- raw HTML omitted -->Amazon SES<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<ul>
+<li>Go to the verified identities</li>
+<li>Enter the domain that you want to verify, and choose to Create an identity.</li>
+<li>Once you’ve set up your domain identity using Easy DKIM, you’ll need to complete the verification process with DKIM authentication. This involves copying the CNAME records generated by Amazon SES and publishing them to your domain’s DNS provider. Please note that it may take up to 72 hours for the records to be detected.</li>
+<li>To add the DNS records to your domain’s DNS zone, open a new browser tab and navigate to the Lightsail console.</li>
+<li>From the Lightsail home page, go to the Networking tab and select your domain’s DNS zone.</li>
+<li>Follow the instructions provided by Amazon SES to add the DNS records to your domain’s DNS zone.</li>
+<li>Configure the SMTP configuration in WordPress using the wp-SMTP plugin</li>
+</ul>
+<p>Now login to your WordPress Instance and configure it.</p>
+<p>Congratulations! You have successfully set up a WordPress blog with Lightsail in AWS. With your new blog up and running, you can start sharing your thoughts, ideas, and expertise with the world.</p>
+<p>Remember to keep your blog secure by regularly updating your WordPress installation and plugins, and by following best practices for online security. You can also use Lightsail’s built-in security features, such as firewall rules and SSH key pairs, to further enhance your blog’s security.</p>
+<p>Finally, don’t forget to regularly back up your blog to ensure that your data is safe in case of any unexpected issues. Lightsail makes it easy to set up automatic backups and restore your blog if needed.</p>
+<p>Thanks for following along with this tutorial, and I hope you enjoy using your new WordPress blog!</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/general/set-up-your-system-for-devops-with-ubuntu-linux/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Set up your system for DevOps with Ubuntu Linux</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mohitkr" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2023 Mohit Kumar
+    </section>
+    
+    <section class="powerby">
+        
+            All content is Copyrighted - Ask before use <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

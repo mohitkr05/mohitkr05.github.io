@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='In today’s fast-paced software development world, DevOps has become an essential approach for creating, testing and delivering software products at a rapid pace. To set up your system for DevOps, you need to have the right tools and applications installed on your system. Setting up your system for DevOps is a crucial step in the software development process, as it can save you time and improve your productivity. In this guide, we will explore the essential tools and applications that you need to install required tools on your system to set it up for DevOps, including development tools, automation tools, and other software applications.'>
+<title>Set up your system for DevOps with Ubuntu Linux</title>
+
+<link rel='canonical' href='http://mohitkr05.github.io/general/set-up-your-system-for-devops-with-ubuntu-linux/'>
+
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='Set up your system for DevOps with Ubuntu Linux'>
+<meta property='og:description' content='In today’s fast-paced software development world, DevOps has become an essential approach for creating, testing and delivering software products at a rapid pace. To set up your system for DevOps, you need to have the right tools and applications installed on your system. Setting up your system for DevOps is a crucial step in the software development process, as it can save you time and improve your productivity. In this guide, we will explore the essential tools and applications that you need to install required tools on your system to set it up for DevOps, including development tools, automation tools, and other software applications.'>
+<meta property='og:url' content='http://mohitkr05.github.io/general/set-up-your-system-for-devops-with-ubuntu-linux/'>
+<meta property='og:site_name' content='Mohit Kumar'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='AWS' /><meta property='article:tag' content='development tools' /><meta property='article:tag' content='initial pc configuration' /><meta property='article:tag' content='LIGHTSAIL' /><meta property='article:tag' content='system setup' /><meta property='article:tag' content='tools' /><meta property='article:tag' content='vagrant' /><meta property='article:tag' content='virtualization' /><meta property='article:tag' content='WORDPRESS' /><meta property='article:published_time' content='2023-04-16T10:29:46&#43;00:00'/><meta property='article:modified_time' content='2023-04-16T10:29:46&#43;00:00'/>
+<meta name="twitter:title" content="Set up your system for DevOps with Ubuntu Linux">
+<meta name="twitter:description" content="In today’s fast-paced software development world, DevOps has become an essential approach for creating, testing and delivering software products at a rapid pace. To set up your system for DevOps, you need to have the right tools and applications installed on your system. Setting up your system for DevOps is a crucial step in the software development process, as it can save you time and improve your productivity. In this guide, we will explore the essential tools and applications that you need to install required tools on your system to set it up for DevOps, including development tools, automation tools, and other software applications.">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Mohit Kumar</a></h1>
+            <h2 class="site-description">My life, views and Technology</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li  class='current' >
+            <a href='/posts/' >
+                
+                
+                
+                <span>Blog</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='' >
+                
+                
+                
+                <span>Services</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/general/set-up-your-system-for-devops-with-ubuntu-linux/">Set up your system for DevOps with Ubuntu Linux</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 16, 161610</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    12 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>In today’s fast-paced software development world, DevOps has become an essential approach for creating, testing and delivering software products at a rapid pace. To set up your system for DevOps, you need to have the right tools and applications installed on your system. Setting up your system for DevOps is a crucial step in the software development process, as it can save you time and improve your productivity. In this guide, we will explore the essential tools and applications that you need to install required tools on your system to set it up for DevOps, including development tools, automation tools, and other software applications. With these tools in place, you’ll be ready to start building and delivering high-quality software products with the speed and efficiency of DevOps.</p>
+<p>This is continuation to my previous post of <a class="link" href="https://www.mohitkr.com/development/setting-up-my-new-pc-with-ubuntu-as-my-primary-development-workstation/"  target="_blank" rel="noopener"
+    >setting my system for Development</a></p>
+<h2 class="wp-block-heading" id="a-hrefhttpsgit-scmcom-target_blank-relnoopener-nofollow-titlegita"><!-- raw HTML omitted -->Git<!-- raw HTML omitted --></h2>
+<p>Git is a free and open-source distributed version control system that was created by Linus Torvalds in 2005. It was designed to be fast, efficient, and scalable, making it ideal for managing both small and large software development projects.</p>
+<!-- raw HTML omitted -->
+<p>Git allows developers to track changes in source code, collaborate with others, and maintain a history of project revisions. It accomplishes this by allowing multiple users to work on the same codebase simultaneously, while also providing a system for managing changes to the codebase and reconciling any conflicts that may arise.</p>
+<p>To Install git you can use the apt package manager with the following command.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>One of the main advantages of Git is its ability to create and manage branches, which allows developers to experiment with new features and ideas without affecting the main codebase. Git also provides a robust set of tools for merging and integrating these changes back into the main codebase, enabling teams to work together effectively on complex software projects.</p>
+<p>This is the first step in setting up your system for DevOps.</p>
+<h2 class="wp-block-heading" id="a-hrefhttpohmyzsh-target_blank-relnoopener-titleoh-my-zshoh-my-zsha"><!-- raw HTML omitted -->oh-my-zsh<!-- raw HTML omitted --></h2>
+<p>oh-my-zsh is an open-source framework for managing the Zsh shell. It was created by Robby Russell in 2009 and has since become one of the most popular Zsh frameworks available. Oh My Zsh is designed to make it easy to configure and customize your Zsh shell, with a range of plugins, themes, and settings that can be easily added and managed.</p>
+<p>One of the main advantages of Oh My Zsh is its extensive library of plugins, which can be used to add additional functionality and features to your Zsh shell. These plugins cover a wide range of use cases, from auto-completion and syntax highlighting to Git integration and custom aliases.</p>
+<p>In addition to its plugins, Oh My Zsh also includes a range of customizable themes that can be used to change the look and feel of your Zsh shell. Themes can be easily installed and customized, allowing you to create a personalized and professional-looking shell environment.</p>
+<!-- raw HTML omitted -->
+<p>Oh My Zsh is also highly customizable, with a range of settings and options that can be adjusted to suit your specific needs and preferences. Whether you’re a novice user or an experienced developer, Oh My Zsh offers a powerful and flexible framework for managing your Zsh shell and enhancing your productivity.</p>
+<p>To Install oh-my-zsh you can follow these steps, you need to have curl and zsh before you can install oh-my-zsh</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 class="wp-block-heading" id="a-hrefhttpsdocsdockercom-target_blank-relnoopener-titledockera"><!-- raw HTML omitted -->Docker<!-- raw HTML omitted --></h2>
+<p>Docker is an open-source containerization platform that is designed to make it easier to create, deploy, and run applications in a variety of environments. It was created in 2013 and has since become one of the most popular tools for containerization.</p>
+<!-- raw HTML omitted -->
+<p>Docker enables developers to package their applications and dependencies into self-contained, portable containers, which can be run on any system that supports Docker. These containers are lightweight, fast, and secure, making them ideal for use in cloud environments, as well as in local development and testing.</p>
+<p>One of the key advantages of Docker is its ability to simplify the deployment and management of applications. With Docker, developers can create a containerized application once, and then deploy it across multiple environments, without having to worry about compatibility issues or configuration differences.</p>
+<p>Installation of Docker in Linux use the following command in Ubuntu Linux</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 class="wp-block-heading" id="a-hrefhttpswwwvirtualboxorg-target_blank-relnoopener-titlevirtualboxvirtualboxa"><!-- raw HTML omitted -->VirtualBox<!-- raw HTML omitted --></h2>
+<p>VirtualBox is a free and open-source virtualization software that allows users to run multiple operating systems on a single computer. It was created by Oracle Corporation in 2007 and has since become one of the most popular virtualization tools available.</p>
+<!-- raw HTML omitted -->
+<p>VirtualBox works by creating a virtual environment in which you can install and run multiple operating systems, including Windows, Linux, and macOS. This virtual environment is isolated from your host operating system, which means that any changes or modifications you make to your virtual environment will not affect your host operating system.</p>
+<!-- raw HTML omitted -->
+<p>One of the main advantages of VirtualBox is its versatility. It can be used for a wide range of applications, from testing software and developing applications to running legacy software and experimenting with new operating systems. With VirtualBox, you can create and manage virtual machines with ease, allowing you to run multiple operating systems simultaneously and switch between them with just a few clicks.</p>
+<p>To install VirtualBox, I am going to follow these steps</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>Add the following line to the /etc/apt/sources.list</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Download the public key and install it</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Install VirtualBox</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 class="wp-block-heading" id="a-hrefhttpswwwvagrantupcom-target_blank-relnoopener-titlevagrantvagranta"><!-- raw HTML omitted -->Vagrant<!-- raw HTML omitted --></h2>
+<p>Vagrant is a popular open-source tool that is used for creating and managing virtual development environments. It was first released in 2010 by Mitchell Hashimoto and has since become a key tool for software developers and IT professionals alike.</p>
+<p>Vagrant works by automating the creation and configuration of virtual machines, allowing developers to easily create and manage their development environments with ease. With Vagrant, developers can define their development environment in a simple configuration file, which can be easily shared and replicated across multiple systems.</p>
+<!-- raw HTML omitted -->
+<p>One of the main advantages of Vagrant is its flexibility. It supports a wide range of virtualization providers, including VirtualBox, VMware, and Hyper-V, allowing developers to choose the best virtualization platform for their specific needs. Vagrant also supports a wide range of operating systems, including Linux, Windows, and macOS, making it a versatile tool for developers working in different environments.</p>
+<p>Use the following links to install Vagrant on your Linux box.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 class="wp-block-heading" id="a-hrefhttpswwwwiresharkorg-target_blank-relnoopener-titlewiresharkwiresharka"><!-- raw HTML omitted -->Wireshark<!-- raw HTML omitted --></h2>
+<p>Wireshark is a free and open-source network protocol analyzer that allows users to capture, analyze, and troubleshoot network traffic. It was first released in 1998 as Ethereal, but was later renamed to Wireshark in 2006.</p>
+<p>Wireshark works by capturing packets of network data and displaying them in a user-friendly interface. It supports a wide range of protocols, including Ethernet, Wi-Fi, TCP/IP, and HTTP, making it a versatile tool for network administrators and security professionals.</p>
+<!-- raw HTML omitted -->
+<p>One of the main advantages of Wireshark is its ability to help troubleshoot network problems. With Wireshark, network administrators can quickly identify and isolate network issues, such as misconfigured routers, network congestion, or security breaches. Wireshark also provides a range of advanced features, such as the ability to filter and analyze network traffic, making it a powerful tool for network analysis and optimization.</p>
+<p>Installation is simple, you just need to install Wireshark, tshark and Tcpdump</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>This step is essential in setting up your system for DevOps as networking is a key factor of DevOps and as a DevOps engineer, you need to be aware of how the network is performing.</p>
+<h2 class="wp-block-heading" id="a-titlepython-hrefhttpswwwpythonorg-target_blank-relnoopenerpythona"><!-- raw HTML omitted -->Python<!-- raw HTML omitted --></h2>
+<p>Python is a popular high-level programming language that is widely used in a variety of industries and applications. Created in the late 1980s by Guido van Rossum, Python has since become one of the most popular programming languages in the world, with a large and active community of developers and users.</p>
+<p>One of the main advantages of Python is its simplicity and ease of use. Its clear and concise syntax makes it easy to read and write, making it an ideal choice for beginners and experienced developers alike. Python also has a vast standard library, which includes a wide range of modules and tools that can be used to develop a wide range of applications, from web development to scientific computing.</p>
+<!-- raw HTML omitted -->
+<p>Another advantage of Python is its versatility. It can be used for a wide range of applications, from building desktop applications and web applications to data analysis and machine learning. Python also has a range of third-party libraries and frameworks, such as Django, Flask, NumPy, and TensorFlow, which can be used to extend its functionality and support a wide range of use cases.</p>
+<p>Python3 is already installed with the latest releases of Ubuntu</p>
+<p>Python is also highly portable, with versions available for all major operating systems, including Windows, Linux, and macOS. Its ease of use, versatility, and portability have made it a popular choice for developers and organizations of all sizes, making Python an essential tool for many different industries and applications.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Python plays a key factor in the automation of the system and thus it is must-have in setting up your system for DevOps.</p>
+<h2 class="wp-block-heading" id="a-title-hrefhttpswwwansiblecom-target_blank-relnoopeneransiblea"><!-- raw HTML omitted -->Ansible<!-- raw HTML omitted --></h2>
+<p>Ansible is an open-source IT automation tool that is designed to simplify the deployment and management of software and infrastructure. It was created by Michael DeHaan in 2012 and has since become one of the most popular automation tools available.</p>
+<p>Ansible works by using simple YAML-based configuration files to define tasks and workflows, making it easy for developers and IT professionals to automate complex processes. It can be used to automate a wide range of tasks, including software deployment, configuration management, and infrastructure provisioning.</p>
+<!-- raw HTML omitted -->
+<p>One of the main advantages of Ansible is its simplicity. It does not require any special agents or software to be installed on remote systems and can be easily configured and managed from a central control node. This makes it a highly scalable and flexible tool for managing large and complex environments.</p>
+<p>To Install Ansible, follow these steps</p>
+<!-- raw HTML omitted -->
+<h2 class="wp-block-heading" id="a-hrefhttpswwwterraformio-target_blank-relnoopener-titleterraforma"><!-- raw HTML omitted -->Terraform<!-- raw HTML omitted --></h2>
+<p>Terraform is an open-source infrastructure-as-code tool that is designed to automate the provisioning, deployment, and management of cloud-based infrastructure. Created by HashiCorp in 2014, Terraform has become a popular tool for DevOps engineers, cloud architects, and IT professionals.</p>
+<!-- raw HTML omitted -->
+<p>Terraform works by defining infrastructure as code, which allows developers to easily manage complex cloud environments using simple configuration files. With Terraform, users can define and manage infrastructure resources, such as virtual machines, networks, and storage, across a wide range of cloud providers, including AWS, Azure, and Google Cloud Platform.</p>
+<!-- raw HTML omitted -->
+<p>One of the main advantages of Terraform is its ability to provide a single, unified interface for managing cloud infrastructure. This enables users to manage complex cloud environments more efficiently and effectively, without the need for multiple tools or platforms.</p>
+<p>Terraform also provides a range of advanced features, such as support for version control, testing, and automation, making it a powerful tool for managing cloud infrastructure at scale. Whether you’re a DevOps engineer, cloud architect, or IT professional, Terraform is a versatile and reliable tool that can help you automate and streamline your cloud infrastructure management.</p>
+<p>To install Terraform use the following commands</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 class="wp-block-heading" id="a-hrefhttpsawsamazoncomcli-target_blank-relnoopener-titleaws-clia"><!-- raw HTML omitted -->AWS CLI<!-- raw HTML omitted --></h2>
+<p>The AWS Command Line Interface (CLI) is an open-source tool that allows developers and IT professionals to interact with Amazon Web Services (AWS) from the command line. Created by Amazon in 2013, the AWS CLI has become a popular tool for managing and automating AWS services.</p>
+<p>The AWS CLI works by providing a simple, unified interface for interacting with AWS services, making it easy to manage and automate AWS resources from the command line. With the AWS CLI, users can perform a wide range of tasks, such as creating and managing EC2 instances, managing S3 buckets, and configuring IAM policies.</p>
+<p>One of the main advantages of the AWS CLI is its flexibility. It can be used on a wide range of platforms, including Windows, macOS, and Linux, and can be easily integrated with other command line tools and scripts. This makes it a highly versatile tool for managing and automating AWS services.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 class="wp-block-heading" id="vs-code--vim">VS Code &amp; VIM</h2>
+<p><strong>VS Code</strong></p>
+<p>Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages and runtimes (such as C++, C#, Java, Python, PHP, Go, .NET)</p>
+<!-- raw HTML omitted -->
+<p>To install VS code download the package and install it. You can use the dpkg command to install the package manager.</p>
+<!-- raw HTML omitted -->
+<p><strong>Vim</strong></p>
+<p>Vim is a highly configurable, open-source text editor that is known for its speed, efficiency, and versatility. Originally released in 1991, Vim is a descendant of the popular Vi editor and is designed to work in a terminal environment, making it ideal for use on servers or other systems without graphical interfaces.</p>
+<!-- raw HTML omitted -->
+<p>One of the things that sets Vim apart from other text editors is its extensive range of keyboard shortcuts and commands. These shortcuts allow experienced Vim users to navigate, edit, and manipulate text with incredible speed and precision, often without ever having to take their hands off the keyboard.</p>
+<p>Another key feature of Vim is its high level of configuration. Users can customize the editor to suit their specific needs and preferences, from changing the appearance of the interface to defining their own key mappings and commands.</p>
+<!-- raw HTML omitted -->
+<p>Despite its initial learning curve, Vim has developed a passionate following among developers, sysadmins, and other power users who value its speed, efficiency, and customizability. Whether you’re working on a remote server or just looking for a powerful text editor that can keep up with your workflow, Vim is definitely worth considering.</p>
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+<p>In conclusion, setting up your system for DevOps can greatly improve your productivity and efficiency as a developer or IT professional. By installing the right tools and software, you can streamline your development workflows, automate repetitive tasks, and manage your infrastructure more effectively.</p>
+<p>From version control systems like Git to automation tools like Ansible, there are many open-source tools available that can help you simplify and optimize your DevOps workflows. By choosing the right tools for your needs and customizing your Ubuntu system accordingly, you can create a powerful and efficient development environment that meets your specific requirements.</p>
+<p>So, whether you’re just getting started with DevOps or looking to improve your existing workflows, be sure to take the time to set up your Ubuntu system with the right tools and software. With the right setup, you can streamline your development processes, reduce your workload, and achieve greater success in your projects.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/development/setting-up-my-new-pc-with-ubuntu-as-my-primary-development-workstation/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Setting up my new PC with Ubuntu as my primary development workstation</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/wordpress/the-complete-guide-to-setup-wordpress-using-aws-lightsail/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Setup WordPress using AWS Lightsail</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/cloud-computing/virtualization/vagrant-the-complete-tutorial/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Vagrant — The complete tutorial</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mohitkr" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2023 Mohit Kumar
+    </section>
+    
+    <section class="powerby">
+        
+            All content is Copyrighted - Ask before use <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
