@@ -24,7 +24,8 @@ imaging:
 
 params:
     mainSections:
-        - post
+        - posts
+        - presentations
     featuredImageField: image
     rssFullContent: true
     favicon:  # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
@@ -32,18 +33,14 @@ params:
     footer:
         since: 2023
         customText: All content is Copyrighted - Ask before use 
-
-    dateFormat:
-        published: Jan 02, 2023
-        lastUpdated: Jan 02, 2023 15:04 MST
-
+        
     sidebar:
         emoji: 🍥        
         subtitle: "My life, views and Technology"
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: img/profile.jpg
 
     article:
         math: true
@@ -103,8 +100,8 @@ menu:
   - name: Blog
     pageRef: /posts
     weight: 20
-  - name: Services
-    pageRef: /services
+  - name: Presentations
+    pageRef: /presentations
     weight: 30
   footer:
   - name: Terms
