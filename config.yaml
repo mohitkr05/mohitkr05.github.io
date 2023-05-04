@@ -2,7 +2,7 @@ title: Mohit Kumar
 baseURL: 'https://mohitkr.com'
 languageCode: en-us
 theme: 'ananke'
-# resourceDir: ../resources
+resourceDir: ../resources
 DefaultContentLanguage: en
 SectionPagesMenu: main
 Paginate: 3
