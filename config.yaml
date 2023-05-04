@@ -1,278 +1,41 @@
-baseURL: "https://mohitkr.com/"
-languageCode: 'en-us'
-title: 'Mohit Kumar'
-theme: 'hugo-theme-stack'
-description: 'My life, views and Technology'
-defaultContentLanguage: "en"
+title: Mohit Kumar
+baseURL: 'https://mohitkr.com'
+languageCode: en-us
+theme: 'ananke'
+resourceDir: ../resources
+DefaultContentLanguage: en
+SectionPagesMenu: main
+Paginate: 3
+googleAnalytics: ''
 enableRobotsTXT: true
-paginate: 10
-summaryLength: 70
-summary: true
-pluralizeListTitles: false
-
-enableEmoji: True
-enableInlineShortcodes: True
-googleAnalytics: ""
-removePathAccents: True
-security: ""
-sitemap: ""
-timeZone: "Australia/Melbourne"
-disqusShortname: mohitkr
-imaging:
-  anchor: Smart
-  bgColor: '#ffffff'
-  hint: photo
-  quality: 75
-  resampleFilter: Box
-
+sitemap:
+  changefreq: weekly
+  priority: 0.5
+  filename: sitemap.xml
 params:
-    author: Mohit Kumar 
-    description: My life, views and Technology
-    email: "john.doe@example.com"
-    logo: "/images/logo.png"
-    social:
-      twitter:
-      facebook:
-      linkedin:
-      github:
-      instagram:
-  
-    mainSections:
-    - posts
-    featuredImageField: image
-    rssFullContent: true
-    favicon: "" # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
-    footer:
-        since: 2023
-        customText: All content is Copyrighted - Ask before use 
-        
-    sidebar:
-        emoji: 🍥        
-        subtitle: "My life, views and Technology"
-        avatar:
-            enabled: false
-            # local: true
-            # src: image/profile.jpg
-
-    article:
-        math: true
-        toc: true
-        readingTime: true
-        license:
-            enabled: true
-            default: Licensed under CC BY-NC-SA 4.0
-
-    comments:
-        enabled: true
-        provider: disqus
-
-        disqusjs:
-            shortname: mohitkr
-            apiUrl:
-            apiKey:
-            admin:
-            adminLabel:
-
-
-taxonomies:
-  category: "categories"
-  tag: "tags"
-
-menu:
-  main:
-  - name: Home
-    pageRef: /
-    weight: 10
-  - name: Blog
-    pageRef: /posts
-    weight: 20
-  # - name: Presentations
-  #   pageRef: /presentations
-  #   weight: 30
-  footer:
-  - name: Terms
-    pageRef: /terms
-    weight: 10
-  - name: Privacy
-    pageRef: /privacy
-    weight: 20
-    
-# menu:
-#   main:
-#     - name: "Home"
-#       url: "/"
-#       weight: 1
-#     - name: "posts"
-#       url: "/blog/"
-#       weight: 2
-#     - name: "About"
-#       url: "/about/"
-#       weight: 3
-  # footer:
-  #   - name: "Contact"
-  #     url: "/contact/"
-  #   - name: "Privacy Policy"
-  #     url: "/privacy/"
-outputFormats:
-  RSS:
-    mediaType: "application/rss+xml"
-    baseName: "rss"
-    isPlainText: false
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-      hardWraps: false
-      smartypants: true
-  tableOfContents:
-    startLevel: 2
-    endLevel: 4
-    ordered: false
-  highlight:
-    style: "dracula"
-
-
-# baseURL: 'http://mohitkr05.github.io/'
-# languageCode: 'en-us'
-# title: 'Mohit Kumar'
-# theme: 'hugo-theme-stack'
-# description: 'My life, views and Technology'
-# copyright: "Mohit Kumar"
-# enableEmoji: True
-# enableInlineShortcodes: True
-# enableRobotsTXT: True
-# googleAnalytics: ""
-# paginate: 10
-# removePathAccents: True
-# security: ""
-# sitemap: ""
-# taxonomies: ""
-# timeZone: "Australia/Melbourne"
-# disqusShortname: mohitkr
-# imaging:
-#   anchor: Smart
-#   bgColor: '#ffffff'
-#   hint: photo
-#   quality: 75
-#   resampleFilter: Box
-
-# params:
-#     mainSections:
-#     - posts
-#     featuredImageField: image
-#     rssFullContent: true
-#     favicon: "" # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
-#     footer:
-#         since: 2023
-#         customText: All content is Copyrighted - Ask before use 
-        
-#     sidebar:
-#         emoji: 🍥        
-#         subtitle: "My life, views and Technology"
-#         avatar:
-#             enabled: true
-#             local: true
-#             src: img/profile.jpg
-
-#     article:
-#         math: true
-#         toc: true
-#         readingTime: true
-#         license:
-#             enabled: true
-#             default: Licensed under CC BY-NC-SA 4.0
-
-#     comments:
-#         enabled: true
-#         provider: disqus
-
-#         disqusjs:
-#             shortname: mohitkr
-#             apiUrl:
-#             apiKey:
-#             admin:
-#             adminLabel:
-
-# related:
-#     includeNewer: true
-#     threshold: 60
-#     toLower: false
-#     indices:
-#         - name: tags
-#           weight: 100
-
-#         - name: categories
-#           weight: 200
-
-
-
-# menu:
-#   main:
-#   - name: Home
-#     pageRef: /
-#     weight: 10
-#   - name: Blog
-#     pageRef: /posts
-#     weight: 20
-#   - name: Presentations
-#     pageRef: /presentations
-#     weight: 30
-#   footer:
-#   - name: Terms
-#     pageRef: /terms
-#     weight: 10
-#   - name: Privacy
-#     pageRef: /privacy
-#     weight: 20
-    
-# minify:
-#   disableCSS: false
-#   disableHTML: false
-#   disableJS: false
-#   disableJSON: false
-#   disableSVG: false
-#   disableXML: false
-#   minifyOutput: false
-#   tdewolff:
-#     css:
-#       keepCSS2: true
-#       precision: 0
-#     html:
-#       keepComments: false
-#       keepConditionalComments: true
-#       keepDefaultAttrVals: true
-#       keepDocumentTags: true
-#       keepEndTags: true
-#       keepQuotes: false
-#       keepWhitespace: false
-#     js:
-#       keepVarNames: false
-#       noNullishOperator: false
-#       precision: 0
-#     json:
-#       keepNumbers: false
-#       precision: 0
-#     svg:
-#       keepComments: false
-#       precision: 0
-#     xml:
-#       keepWhitespace: false
-# caches:
-#   assets:
-#     dir: :resourceDir/_gen
-#     maxAge: -1
-#   getcsv:
-#     dir: :cacheDir/:project
-#     maxAge: -1
-#   getjson:
-#     dir: :cacheDir/:project
-#     maxAge: -1
-#   getresource:
-#     dir: :cacheDir/:project
-#     maxAge: -1
-#   images:
-#     dir: :resourceDir/_gen
-#     maxAge: -1
-#   modules:
-#     dir: :cacheDir/modules
-#     maxAge: -1
+  text_color: 'black'
+  # commentoEnable: true
+  body_classes: "avenir bg-near-white"
+  author: 'Mohit Kumar'
+  favicon: 'images/favicon.ico'
+  site_logo: 'images/logo.png'
+  description: My life, my views.
+  background_color_class: bg-purple
+  recent_posts_number: 6
+  ananke_socials:
+    - name: twitter
+      url: 'https://twitter.com/mohitkrau'
+    - name: instagram
+      url : ""
+    - name: youtube
+      url : ""
+    - name: github
+      url : ""
+    - name: linkedin
+      url : ""
+    - name: medium
+      url : ""
+    - name: slack
+      url : ""
+    - name: rss
+      url : ""

@@ -3,11 +3,10 @@ title: Using ChatGPT as a personal assistant
 author: mohit
 type: post
 draft: false 
-summary: true
 date: 2023-04-17T21:20:41+00:00
-excerpt: 'The use of prompts has revolutionized the field of NLP, enabling machines to understand and respond to human language more accurately and efficiently. It is important to provide clear and specific prompts to ensure the desired outcome is achieved, and to be aware of potential ambiguities or vagueness in the prompt to avoid generating irrelevant or misleading responses'
+summary: 'The use of prompts has revolutionized the field of NLP, enabling machines to understand and respond to human language more accurately and efficiently. It is important to provide clear and specific prompts to ensure the desired outcome is achieved, and to be aware of potential ambiguities or vagueness in the prompt to avoid generating irrelevant or misleading responses'
 url: /ai-ml/using-chatgpt-as-a-personal-assistant/
-image: "images/2023/04/Screenshot_20230417_212536.png"
+featured_image: "images/2023/04/Screenshot_20230417_212536.png"
 categories:
   - AI/ML
 tags:
