@@ -1,0 +1,78 @@
+
+---Downloaded files---
+The import files for: Free Version were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://dailytechlearning.com
+Data file = /home/kumarbdj/dailytechlearning.com/wp-content/uploads/2021/04/demo-content-import-file_2021-04-03__07-41-13.xml
+Widget file = /home/kumarbdj/dailytechlearning.com/wp-content/uploads/2021/04/demo-widgets-import-file_2021-04-03__07-41-13.json
+Customizer file = /home/kumarbdj/dailytechlearning.com/wp-content/uploads/2021/04/demo-customizer-import-file_2021-04-03__07-41-13.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+[WARNING] Failed to import "form": Invalid post type mc4wp-form
+
+
+---Importing widgets---
+Sidebar : 
+
+Search - No Title - Imported
+Recent Posts - No Title - Imported
+Recent Comments - No Title - Imported
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+
+Footer Left : 
+
+Text - About us - Imported
+
+Footer Middle : 
+
+Categories - No Title - Imported
+
+Footer Right : 
+
+Navigation Menu - More - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ct-CT_CTDI/after_import---
+

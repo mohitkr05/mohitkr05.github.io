@@ -2,10 +2,12 @@
 title: Using ChatGPT as a personal assistant
 author: mohit
 type: post
+draft: false 
+summary: true
 date: 2023-04-17T21:20:41+00:00
-excerpt: ' The use of prompts has revolutionized the field of NLP, enabling machines to understand and respond to human language more accurately and efficiently. It is important to provide clear and specific prompts to ensure the desired outcome is achieved, and to be aware of potential ambiguities or vagueness in the prompt to avoid generating irrelevant or misleading responses'
+excerpt: 'The use of prompts has revolutionized the field of NLP, enabling machines to understand and respond to human language more accurately and efficiently. It is important to provide clear and specific prompts to ensure the desired outcome is achieved, and to be aware of potential ambiguities or vagueness in the prompt to avoid generating irrelevant or misleading responses'
 url: /ai-ml/using-chatgpt-as-a-personal-assistant/
-featured_image: http://www.mohitkr.com/wp-content/uploads/2023/04/Screenshot_20230417_212536.png
+image: "images/2023/04/Screenshot_20230417_212536.png"
 categories:
   - AI/ML
 tags:
@@ -26,36 +28,28 @@ Whether you’re a busy professional, a student, or simply someone who wants to 
 
 These are covered in detail in my course as well, with the following course content.
 
-<div class="wp-block-image">
-  <figure class="aligncenter size-full"><img decoding="async" loading="lazy" width="1004" height="560" src="https://www.mohitkr.com/wp-content/uploads/2023/04/Screenshot_20230417_212536.png" alt="" class="wp-image-3071" srcset="https://www.mohitkr.com/wp-content/uploads/2023/04/Screenshot_20230417_212536.png 1004w, https://www.mohitkr.com/wp-content/uploads/2023/04/Screenshot_20230417_212536-300x167.png 300w, https://www.mohitkr.com/wp-content/uploads/2023/04/Screenshot_20230417_212536-768x428.png 768w" sizes="(max-width: 1004px) 100vw, 1004px" /></figure>
-</div>
+![ChatGPT Course content](images/2023/04/Screenshot_20230417_212536.png)
 
-<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-5">
-  <div class="wp-block-button has-custom-width wp-block-button__width-50">
-    <a class="wp-block-button__link wp-element-button" href="" target="_blank" rel="noreferrer noopener">Get discount on this course</a>
-  </div>
-</div>
-
-## What is a prompt? {.wp-block-heading}
+## What is a prompt?
 
 A prompt is a set of instructions or guidelines given to a person or a computer program to perform a specific task or to generate a particular response. In the context of natural language processing (NLP), a prompt is a text or voice command that is given to an AI language model to generate a response that is relevant to the prompt. Prompts can be used to train language models, generate text or speech, answer questions, and perform a variety of other tasks in NLP. The quality and specificity of the prompt can have a significant impact on the quality and relevance of the generated response.
 
-## How to write effective prompts? {.wp-block-heading}
+## How to write effective prompts?
 
 To write better prompts, you should follow these templates
 
-  * Task/Topic: Clearly state the topic or task at hand
-  * Intended Audience: Specify the intended audience for the prompt
-  * Context/Background Information: Provide necessary context or background information to aid ChatGPT in understanding the prompt
-  * Desired Outcome/Goal: Clearly and specifically communicate the desired outcome or goal of the prompt
-  * Prompt Modifiers: Use specific prompt modifiers to further clarify the type of response or format desired
-  * Examples/Scenarios: Include relevant examples or scenarios, if applicable, to illustrate the desired outcome
-  * Criteria/Evaluation Metrics: Include any relevant criteria or evaluation metrics for assessing the response, if applicable
-  * Ambiguity Check: Double-check for potential ambiguity or vagueness in the prompt and clarify as necessary
+* Task/Topic: Clearly state the topic or task at hand
+* Intended Audience: Specify the intended audience for the prompt
+* Context/Background Information: Provide necessary context or background information to aid ChatGPT in understanding the prompt
+* Desired Outcome/Goal: Clearly and specifically communicate the desired outcome or goal of the prompt
+* Prompt Modifiers: Use specific prompt modifiers to further clarify the type of response or format desired
+* Examples/Scenarios: Include relevant examples or scenarios, if applicable, to illustrate the desired outcome
+* Criteria/Evaluation Metrics: Include any relevant criteria or evaluation metrics for assessing the response, if applicable
+* Ambiguity Check: Double-check for potential ambiguity or vagueness in the prompt and clarify as necessary
 
-## Sample prompts {.wp-block-heading}
+## Sample prompts
 
-### [][1]For College and School Students {.wp-block-heading}
+### [][1]For College and School Students
 
   1. Act as my fellow student and help me prepare for my exam. I will be providing a topic, ask me some questions and discussing some relevant points.
   2. Act as an exam question paper that would ask me 1 question at a time for the topic of the Theory of relativity. When I answer, please evaluate it and also provide any improvements.
@@ -68,7 +62,7 @@ To write better prompts, you should follow these templates
   9. What is the difference between an acute angle and an obtuse angle? 
  10. Can you give me some practice problems on geometry? 
 
-### For Professionals {.wp-block-heading}
+### For Professionals
 
   1. Write a LinkedIn post Write tweets from a paragraph and make a thread. 
   2. Generate a Reddit post 
@@ -124,7 +118,7 @@ To write better prompts, you should follow these templates
  52. As a software engineer, design a user interface for a new mobile app, including wireframes, prototypes, and usability testing. 
  53. As a financial analyst, conduct a financial analysis for a new investment opportunity, including financial statements, cash flow analysis, and risk assessment.
 
-### Personal Assistance {.wp-block-heading}
+### Personal Assistance
 
   1. What are some cost-effective ways to improve the curb appeal of my home? 
   2. Can you recommend some energy-efficient upgrades to my home to save on utility bills? 
@@ -177,7 +171,7 @@ To write better prompts, you should follow these templates
  49. Can you recommend some energy-efficient upgrades to my home to save on utility bills?
  50. I want to plan a weekend getaway with my friends. What are some fun activities we can do in the area?
 
-## Conclusion {.wp-block-heading}
+## Conclusion
 
 In conclusion, prompts play a vital role in natural language processing by guiding AI language models to generate specific responses relevant to the given task or topic. The use of prompts has revolutionized the field of NLP, enabling machines to understand and respond to human language more accurately and efficiently. It is important to provide clear and specific prompts to ensure the desired outcome is achieved, and to be aware of potential ambiguities or vagueness in the prompt to avoid generating irrelevant or misleading responses. As NLP continues to evolve, the use of prompts will undoubtedly become more prevalent, allowing us to interact with machines in increasingly natural and intuitive ways.
 
