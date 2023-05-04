@@ -50,9 +50,9 @@ params:
         emoji: 🍥        
         subtitle: "My life, views and Technology"
         avatar:
-            enabled: true
-            local: true
-            src: images/profile.jpg
+            enabled: false
+            # local: true
+            # src: image/profile.jpg
 
     article:
         math: true
