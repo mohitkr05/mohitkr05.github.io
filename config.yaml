@@ -2,8 +2,8 @@ title: Mohit Kumar
 baseURL: 'https://mohitkr.com'
 languageCode: en-us
 theme: 'hugo-theme-cleanwhite'
-disqusShortname: "mohitkr05"
-googleAnalytics: ""
+disqusShortname: "disqus_Nsi1H5N8J6"
+googleAnalytics: "G-N2QSYLPBHF" #UA-262536683-1 #287685958
 preserveTaxonomyNames: true
 paginate: 10
 hasCJKLanguage: true
