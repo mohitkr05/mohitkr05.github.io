@@ -1,3 +1,6 @@
 [submodule "content/presentations/virtualization"]
 	path = content/presentations/virtualization
 	url = https://github.com/mohitkr05/Understanding_Virtualization
+[submodule "themes/hugo-theme-cleanwhite"]
+	path = themes/hugo-theme-cleanwhite
+	url = https://github.com/zhaohuabing/hugo-theme-cleanwhite.git
