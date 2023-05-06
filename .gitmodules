@@ -1,12 +1,3 @@
-[submodule "themes/ananke"]
-	path = themes/ananke
-	url = https://github.com/theNewDynamic/gohugo-theme-ananke
-[submodule "themes/hugo-theme-stack"]
-	path = themes/hugo-theme-stack
-	url = https://github.com/CaiJimmy/hugo-theme-stack
-[submodule "themes/hugo-clarity"]
-	path = themes/hugo-clarity
-	url = https://github.com/chipzoller/hugo-clarity
 [submodule "content/presentations/virtualization"]
 	path = content/presentations/virtualization
 	url = https://github.com/mohitkr05/Understanding_Virtualization
