@@ -1,2 +1,2 @@
-.zip
-oldposts/*
+.DS_Store
+node_modules
