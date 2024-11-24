@@ -1,2 +1,53 @@
-site_name: Mohit Kumar
+# mkdocs.yml
 
+site_name: Mohit Kumar
+site_url: https://mohitkr05.github.com # URL for your site (optional)
+site_author: Mohit Kumar
+site_description: "A personal blog about technology, programming, and personal insights."
+# repo_url: "https://github.com/chrissimpkins/cinder"
+# copyright: "Cinder is licensed under the <a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'>MIT license</a>"
+
+theme:
+  name: null
+  custom_dir: "cinder"
+  fonts:
+    text: Roboto
+    code: Roboto Mono
+  colorscheme: github
+  highlightjs: true
+  hljs_languages:
+    - yaml
+
+nav: # Navigation structure for your docs
+  - Home: index.md
+  - About: about.md
+  - Guide:
+      - Getting Started: guide/getting-started.md
+      - Advanced Features: guide/advanced-features.md
+
+plugins: # Plugins for additional functionality
+  - search # Default full-text search plugin
+
+markdown_extensions: # Extensions to enhance Markdown functionality
+  - toc: # Table of Contents
+      permalink: true
+  - admonition # Admonition boxes (e.g., Note, Warning)
+  - codehilite: # Syntax highlighting
+      guess_lang: false
+  - footnotes
+  - pymdownx.superfences # Fenced code blocks
+  - pymdownx.highlight
+  - pymdownx.tasklist
+
+extra_css: # Add custom CSS (optional)
+  - stylesheets/extra.css
+
+extra_javascript: # Add custom JavaScript (optional)
+  - scripts/custom.js
+
+extra: # Optional site metadata
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/myrepo
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/myhandle

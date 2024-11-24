@@ -366,6 +366,20 @@ natsort = ">=8.1.0"
 wcmatch = ">=7"
 
 [[package]]
+name = "mkdocs-bootstrap"
+version = "1.1.1"
+description = "Bootstrap theme for MkDocs"
+optional = false
+python-versions = ">=3.5"
+files = [
+    {file = "mkdocs-bootstrap-1.1.1.tar.gz", hash = "sha256:c8ec5eb3a1dbd54f8285414a710bd023edb501946a48d9f37de8c835b7f44158"},
+    {file = "mkdocs_bootstrap-1.1.1-py2.py3-none-any.whl", hash = "sha256:dc544bdc95b7054578093da466482ded8633075b987f3269828a252f48848392"},
+]
+
+[package.dependencies]
+mkdocs = ">=1.1"
+
+[[package]]
 name = "mkdocs-get-deps"
 version = "0.2.0"
 description = "MkDocs extension that lists all dependencies according to a mkdocs.yml file"
@@ -822,4 +836,4 @@ bracex = ">=2.1.1"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "888b17c818d4696bcab7806f18279f0006a58e6d32aaf2d252e3bb9bbb4a3409"
+content-hash = "74c9f3c3b06ee3d19d8e378f25f1234bf81e10d131181549231c27a347471c21"
